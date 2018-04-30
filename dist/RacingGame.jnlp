@@ -16,6 +16,6 @@
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="RacingGame" >
     <param name="requiredFXVersion" value="2.2+"/>
   </applet-desc>
-  <jfx:javafx-desc  width="800" height="600" main-class="com.racingGame.OptionDialog"  name="RacingGame" />
+  <jfx:javafx-desc width="800" height="600" main-class="ru.ilku0917.networkGame.StartMenu" name="RacingGame" />
   <update check="always"/>
 </jnlp>

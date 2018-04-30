@@ -1,4 +1,4 @@
-package com.racingGame;
+package ru.ilku0917.networkGame;
 
 import javafx.animation.FadeTransition;
 import javafx.scene.layout.Pane;
@@ -9,8 +9,7 @@ import javafx.scene.text.Text;
 import javafx.util.Duration;
 
 /**
- *
- * @author tareq
+ * Для обновления информации об игре TODO переделать
  */
 public class StatusUpdater extends Pane {
 

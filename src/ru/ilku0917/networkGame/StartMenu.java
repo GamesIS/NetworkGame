@@ -1,4 +1,4 @@
-package com.racingGame;
+package ru.ilku0917.networkGame;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,7 +6,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class OptionDialog extends Application {
+/**
+ * Первичное окно для подключения. Начинается все с него
+ */
+
+public class StartMenu extends Application {
 
     static Stage window;
 
@@ -16,7 +20,7 @@ public class OptionDialog extends Application {
         Scene scene = new Scene(root);
         window.setScene(scene);
         window.show();
-        OptionDialog.window = window;
+        StartMenu.window = window;
 
     }
 

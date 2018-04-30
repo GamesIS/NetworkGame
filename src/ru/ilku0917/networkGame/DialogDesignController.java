@@ -3,10 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.racingGame;
+package ru.ilku0917.networkGame;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -14,6 +12,9 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleButton;
+
+import java.net.URL;
+import java.util.ResourceBundle;
 
 public class DialogDesignController implements Initializable {
 
@@ -48,13 +49,14 @@ public class DialogDesignController implements Initializable {
         continuebtn.setOnAction(new EventHandler<ActionEvent>() {
 
             public void handle(ActionEvent e) {
-                RacingGame.address = address.getText();
-                RacingGame.server = hostbtn.isSelected();
-                RacingGame game = new RacingGame();
+                NetworkGame.setAddress(address.getText());
+                NetworkGame.setServer(hostbtn.isSelected());
+                NetworkGame game = new NetworkGame();
                 try {
-                    game.start(OptionDialog.window);
-                    OptionDialog.window.centerOnScreen();
+                    game.start(StartMenu.window);
+                    StartMenu.window.centerOnScreen();
                 } catch (Exception ex) {
+                    ex.printStackTrace();
                 }
             }
         });
